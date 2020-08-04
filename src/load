@@ -1,0 +1,5 @@
+mvn clean 
+mvn compile
+mvn install
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.app
+aws s3 cp target/my-app-1.0-SNAPSHOT.jar s3:///mkpp-javaproject/my-app-1.0-SNAPSHOT.jar
